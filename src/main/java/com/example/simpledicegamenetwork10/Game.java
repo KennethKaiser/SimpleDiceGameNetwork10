@@ -5,9 +5,11 @@ public class Game {
     private RaffleCup raffleCup = new RaffleCup();
     private Conditions conditions = new Conditions();
 
-    public Game(){
+    public Game(){}
 
-        PlayerHandler playerHandler = new PlayerHandler(2);
+    public Game(int nop){
+
+        PlayerHandler playerHandler = new PlayerHandler(nop);
         Player currentPlayer;
 
         do {
